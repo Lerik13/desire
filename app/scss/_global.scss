@@ -8,6 +8,8 @@ body{
 	font-weight: 400;
 	font-family: 'Open Sans', sans-serif;
 	color: $color-default;
+	overflow-x: hidden; // Hide horizontal scroll
+	min-width: 320px;
 }
 
 .wrapper {
