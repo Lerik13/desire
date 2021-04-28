@@ -335,6 +335,7 @@
 	padding: 45px 0 105px;
 	// .new-collection__title
 	&__title {
+		@extend %title-font;
 		color: $color-title;
 		font-size: 35px;
 		line-height: 51px;
@@ -396,6 +397,7 @@
 	}
 	// .collection__info-title
 	&__info-title {
+		@extend %title-font;
 		font-size: 20px;
 		line-height: 25px;
 		color: $color-title;
@@ -430,6 +432,7 @@
 	//min-height: 600px;
 	// .call-to-action__title
 	&__title {
+		@extend %title-font;
 		max-width: 730px;
 		color: $color-title;
 		font-size: 60px;
@@ -450,6 +453,95 @@
 	// .call-to-action__text
 	&__text {
 		max-width: 540px;
+	}
+}
+//========================================================================================================================================================
+.how-it-works {
+	padding: 80px 0 30px;
+	// .how-it-works__title
+	&__title {
+		@extend %title-font;
+		text-align: center;
+		color: $color-title;
+		font-size: 36px;
+		line-height: 51px;
+		margin-bottom: 40px;
+	}
+	// .how-it-works__items
+	&__items {
+	}
+	// .how-it-works__items-box
+	&__items-box {
+		display: flex;
+		align-items: flex-end;
+		border-bottom: 2px solid rgba($color-title, .7);
+		position: relative;
+		&::before {
+			content: '';
+			position: absolute;
+			bottom: -5px;
+			left: 0;
+			width: 10px;
+			height: 10px;
+			border-radius: 50%;
+			background-color: $color-title;
+		}
+	}
+	// .how-it-works__item
+	&__item {
+		width: 250px;
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		position: relative;
+		height: 100%;
+	}
+	// .how-it-works__item--1
+	&__item--1 {
+		padding-bottom: 38px;
+	}	
+	// .how-it-works__item--2
+	&__item--2 {
+		padding-bottom: 38px;
+		margin-left: 317px;
+		&::after {
+			content: '';
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			height: 20px;
+			width: 2px;
+			background: rgba($color-title, .7);
+			
+		}
+	}
+	// .how-it-works__item--3
+	&__item--3 {
+		padding-top: 38px;
+		margin-left: 305px;
+		&::before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			height: 20px;
+			width: 2px;
+			background: rgba($color-title, .7);
+		}
+	}	
+		// .how-it-works__item-img
+	&__item-img {
+
+	}
+	// .how-it-works__item-title
+	&__item-title {
+		margin-left: 13px;
+		color: $color-title;
+		@extend %title-font;
+	}
+	// .how-it-works__item-text
+	&__item-text {
+		margin-top: 13px;
 	}
 }
 
