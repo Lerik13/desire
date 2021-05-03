@@ -379,7 +379,7 @@
 //========================================================================================================================================================
 .new-collection {
 	text-align: center;
-	padding: 45px 0 105px;
+	padding: 45px 0 35px;
 	// .new-collection__title
 	&__title {
 		@extend %title-font;
@@ -412,6 +412,7 @@
 	display: grid;
 	grid-template-columns: repeat(5, 1fr);
 	grid-gap: 30px;
+	padding-bottom: 70px;
 	// .collection__item
 	&__item {
 		position: relative;		
@@ -861,6 +862,20 @@
 		margin-top: -2px;
 	}
 }
+//========================================================================================================================================================
+.partners {
+	padding: 16px 0 60px;
+	// .partners__items
+	&__items {
+		display: grid;
+		grid-template-columns: repeat(5, 1fr);
+	}
+	// .partners__item
+	&__item {
+		margin: 0 auto;
+	}
+}
+
 
 
 
